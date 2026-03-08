@@ -4,7 +4,6 @@ function App() {
     const [message, setMessage] = useState('');
 
     useEffect(() => {
-        // Llamamos directamente a la ruta relativa
         fetch('/api/hello')
             .then(r => r.json())
             .then(d => setMessage(d.message))
